@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import cx from 'classnames';
 
 interface ButtonProps {
   size?: 'sm' | 'md' | 'lg';
@@ -6,5 +7,5 @@ interface ButtonProps {
 }
 
 export const Button: FC<ButtonProps> = ({ label, size = 'sm' }) => {
-  return <button>{label}</button>;
+  return <button className={cx()}>{label}</button>;
 };
