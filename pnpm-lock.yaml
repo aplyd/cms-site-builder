@@ -58,13 +58,17 @@ importers:
       '@storybook/addon-essentials': ^6.5.16
       '@storybook/addon-interactions': ^6.5.16
       '@storybook/addon-links': ^6.5.16
+      '@storybook/addon-postcss': ^2.0.0
       '@storybook/builder-webpack5': ^6.5.16
       '@storybook/cli': ^6.5.16
       '@storybook/manager-webpack5': ^6.5.16
       '@storybook/react': ^6.5.16
       '@storybook/testing-library': ^0.0.13
       '@types/react': ^18.0.22
+      autoprefixer: ^10.4.13
       babel-loader: ^8.3.0
+      postcss: ^8.4.21
+      postcss-loader: ^7.0.2
       react: 18.2.0
       react-dom: 18.2.0
       tailwind-config: workspace:*
@@ -76,13 +80,17 @@ importers:
       '@storybook/addon-essentials': 6.5.16_a3xbfthmamfaqvomusohxsetti
       '@storybook/addon-interactions': 6.5.16_fleixqh4h74dmdivs7fx6vtiqe
       '@storybook/addon-links': 6.5.16_biqbaboplfbrettd7655fr4n2y
+      '@storybook/addon-postcss': 2.0.0_webpack@5.75.0
       '@storybook/builder-webpack5': 6.5.16_ygqkwb4gg3aean7xjfdauovyqq
       '@storybook/cli': 6.5.16_ygqkwb4gg3aean7xjfdauovyqq
       '@storybook/manager-webpack5': 6.5.16_ygqkwb4gg3aean7xjfdauovyqq
       '@storybook/react': 6.5.16_dyefdi4m5prsj2jzuua6oyowx4
       '@storybook/testing-library': 0.0.13_biqbaboplfbrettd7655fr4n2y
       '@types/react': 18.0.28
+      autoprefixer: 10.4.13_postcss@8.4.21
       babel-loader: 8.3.0_la66t7xldg4uecmyawueag5wkm
+      postcss: 8.4.21
+      postcss-loader: 7.0.2_6jdsrmfenkuhhw3gx4zvjlznce
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       tailwind-config: link:../tailwind-config
@@ -2387,6 +2395,19 @@ packages:
       react-dom: 18.2.0_react@18.2.0
       regenerator-runtime: 0.13.11
       ts-dedent: 2.2.0
+    dev: true
+
+  /@storybook/addon-postcss/2.0.0_webpack@5.75.0:
+    resolution: {integrity: sha512-Nt82A7e9zJH4+A+VzLKKswUfru+T6FJTakj4dccP0i8DSn7a0CkzRPrLuZBq8tg4voV6gD74bcDf3gViCVBGtA==}
+    engines: {node: '>=10', yarn: ^1.17.0}
+    dependencies:
+      '@storybook/node-logger': 6.5.16
+      css-loader: 3.6.0_webpack@5.75.0
+      postcss: 7.0.39
+      postcss-loader: 4.3.0_is25vgl4syps62ryudctlza7cy
+      style-loader: 1.3.0_webpack@5.75.0
+    transitivePeerDependencies:
+      - webpack
     dev: true
 
   /@storybook/addon-toolbars/6.5.16_biqbaboplfbrettd7655fr4n2y:
@@ -5636,6 +5657,28 @@ packages:
       schema-utils: 2.7.1
       semver: 6.3.0
       webpack: 4.46.0
+    dev: true
+
+  /css-loader/3.6.0_webpack@5.75.0:
+    resolution: {integrity: sha512-M5lSukoWi1If8dhQAUCvj4H8vUt3vOnwbQBH9DdTm/s4Ym2B/3dPMtYZeJmq7Q3S3Pa+I94DcZ7pc9bP14cWIQ==}
+    engines: {node: '>= 8.9.0'}
+    peerDependencies:
+      webpack: ^4.0.0 || ^5.0.0
+    dependencies:
+      camelcase: 5.3.1
+      cssesc: 3.0.0
+      icss-utils: 4.1.1
+      loader-utils: 1.4.2
+      normalize-path: 3.0.0
+      postcss: 7.0.39
+      postcss-modules-extract-imports: 2.0.0
+      postcss-modules-local-by-default: 3.0.3
+      postcss-modules-scope: 2.2.0
+      postcss-modules-values: 3.0.0
+      postcss-value-parser: 4.2.0
+      schema-utils: 2.7.1
+      semver: 6.3.0
+      webpack: 5.75.0
     dev: true
 
   /css-loader/5.2.7_webpack@5.75.0:
@@ -9904,6 +9947,36 @@ packages:
       webpack: 4.46.0
     dev: true
 
+  /postcss-loader/4.3.0_is25vgl4syps62ryudctlza7cy:
+    resolution: {integrity: sha512-M/dSoIiNDOo8Rk0mUqoj4kpGq91gcxCfb9PoyZVdZ76/AuhxylHDYZblNE8o+EQ9AMSASeMFEKxZf5aU6wlx1Q==}
+    engines: {node: '>= 10.13.0'}
+    peerDependencies:
+      postcss: ^7.0.0 || ^8.0.1
+      webpack: ^4.0.0 || ^5.0.0
+    dependencies:
+      cosmiconfig: 7.1.0
+      klona: 2.0.6
+      loader-utils: 2.0.4
+      postcss: 7.0.39
+      schema-utils: 3.1.1
+      semver: 7.3.8
+      webpack: 5.75.0
+    dev: true
+
+  /postcss-loader/7.0.2_6jdsrmfenkuhhw3gx4zvjlznce:
+    resolution: {integrity: sha512-fUJzV/QH7NXUAqV8dWJ9Lg4aTkDCezpTS5HgJ2DvqznexTbSTxgi/dTECvTZ15BwKTtk8G/bqI/QTu2HPd3ZCg==}
+    engines: {node: '>= 14.15.0'}
+    peerDependencies:
+      postcss: ^7.0.0 || ^8.0.1
+      webpack: ^5.0.0
+    dependencies:
+      cosmiconfig: 7.1.0
+      klona: 2.0.6
+      postcss: 8.4.21
+      semver: 7.3.8
+      webpack: 5.75.0
+    dev: true
+
   /postcss-modules-extract-imports/2.0.0:
     resolution: {integrity: sha512-LaYLDNS4SG8Q5WAWqIJgdHPJrDDr/Lv775rMBFUbgjTz6j34lUznACHcdRWroPvXANP2Vj7yNK57vp9eFqzLWQ==}
     engines: {node: '>= 6'}
@@ -11430,6 +11503,17 @@ packages:
       loader-utils: 2.0.4
       schema-utils: 2.7.1
       webpack: 4.46.0
+    dev: true
+
+  /style-loader/1.3.0_webpack@5.75.0:
+    resolution: {integrity: sha512-V7TCORko8rs9rIqkSrlMfkqA63DfoGBBJmK1kKGCcSi+BWb4cqz0SRsnp4l6rU5iwOEd0/2ePv68SV22VXon4Q==}
+    engines: {node: '>= 8.9.0'}
+    peerDependencies:
+      webpack: ^4.0.0 || ^5.0.0
+    dependencies:
+      loader-utils: 2.0.4
+      schema-utils: 2.7.1
+      webpack: 5.75.0
     dev: true
 
   /style-loader/2.0.0_webpack@5.75.0:
