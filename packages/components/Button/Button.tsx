@@ -8,7 +8,7 @@ export interface ButtonProps {
 
 export const Button: FC<ButtonProps> = ({ size = 'md', label, ...props }) => {
   return (
-    <button type="button" className="bg-slate-400" {...props}>
+    <button type="button" className="bg-red-400" {...props}>
       {label}
     </button>
   );
