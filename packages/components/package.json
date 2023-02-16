@@ -1,21 +1,29 @@
 {
   "name": "components",
-  "version": "0.0.0",
-  "main": "./index.tsx",
-  "types": "./index.tsx",
-  "license": "MIT",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "lint": "eslint *.ts*"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "start-storybook -p 6006"
   },
   "devDependencies": {
-    "@types/react": "^18.0.17",
-    "@types/react-dom": "^18.0.6",
-    "classnames": "^2.3.2",
-    "eslint": "^7.32.0",
-    "eslint-config-custom": "workspace:*",
-    "react": "^18.2.0",
-    "tsconfig": "workspace:*",
+    "@babel/core": "^7.20.12",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-webpack5": "^6.5.16",
+    "@storybook/cli": "^6.5.16",
+    "@storybook/manager-webpack5": "^6.5.16",
+    "@storybook/react": "^6.5.16",
+    "@storybook/testing-library": "^0.0.13",
+    "@types/react": "^18.0.22",
+    "babel-loader": "^8.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "tailwind-config": "workspace:*",
-    "typescript": "^4.5.2"
+    "tsconfig": "workspace:*",
+    "typescript": "^4.9.5"
   }
 }
