@@ -5,6 +5,7 @@ module.exports = {
     '@next/next/no-html-link-for-pages': 'off',
     'react/jsx-key': 'off',
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
+    'react/jsx-props-no-spreading': 'off',
   },
   overrides: [
     {
