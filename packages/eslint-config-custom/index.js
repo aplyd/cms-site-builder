@@ -6,6 +6,9 @@ module.exports = {
     'react/jsx-key': 'off',
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
     'react/jsx-props-no-spreading': 'off',
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'react/require-default-props': 'off',
+    'react/function-component-definition': 'off',
   },
   overrides: [
     {

@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 
 export interface ButtonProps {
   size?: 'sm' | 'md' | 'lg';
@@ -6,10 +6,8 @@ export interface ButtonProps {
   onClick?: () => void;
 }
 
-export const Button: FC<ButtonProps> = ({ size = 'md', label, ...props }) => {
-  return (
-    <button type="button" className="bg-red-400" {...props}>
-      {label}
-    </button>
-  );
-};
+export const Button: FC<ButtonProps> = ({ size = 'md', label, onClick = () => {}, ...props }) => (
+  <button type="button" className={`bg-red-400 ${size}`} {...props} onClick={() => onClick?.()}>
+    {label}
+  </button>
+);
