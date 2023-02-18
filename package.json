@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "concurrently pnpm:dev:*",
+    "dev:next": "next dev",
+    "dev:storybook": "storybook dev -p 6006",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build:storybook": "storybook build"
   },
   "dependencies": {
     "@next/font": "13.1.6",
@@ -16,7 +19,13 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@storybook/addon-essentials": "^7.0.0-beta.50",
+    "@storybook/addon-interactions": "^7.0.0-beta.50",
+    "@storybook/addon-links": "^7.0.0-beta.50",
+    "@storybook/blocks": "^7.0.0-beta.50",
+    "@storybook/nextjs": "^7.0.0-beta.50",
+    "@storybook/react": "^7.0.0-beta.50",
+    "@storybook/testing-library": "^0.0.14-next.1",
     "@types/node": "18.14.0",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
@@ -32,6 +41,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
     "prettier": "^2.8.4",
+    "storybook": "^7.0.0-beta.50",
     "typescript": "4.9.5"
   }
 }
