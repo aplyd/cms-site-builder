@@ -1,5 +1,5 @@
 {
   "*": "prettier -l",
-  "*.(ts|tsx)": "tsc --skipLibCheck --noEmit --jsx preserve",
+  "*.(ts|tsx)": "tsc --skipLibCheck --noEmit --jsx preserve --esModuleInterop",
   "*.(ts|tsx|js|jsx)": "eslint"
 }
