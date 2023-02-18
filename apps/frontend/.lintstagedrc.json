@@ -1,5 +1,0 @@
-{
-  "*": "prettier -l",
-  "*.(ts|tsx)": "tsc --skipLibCheck --noEmit --jsx react-jsx",
-  "*.(ts|tsx|js|jsx)": "eslint"
-}
