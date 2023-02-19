@@ -10,6 +10,7 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
+    "format": "prettier --write .",
     "build:storybook": "storybook build"
   },
   "dependencies": {
