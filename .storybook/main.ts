@@ -1,5 +1,6 @@
 import type { StorybookConfig } from '@storybook/nextjs';
 import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
+import path from 'path';
 
 const storybookConfig: StorybookConfig = {
   stories: [
@@ -27,6 +28,22 @@ const storybookConfig: StorybookConfig = {
         }),
       ];
     }
+
+    config?.module?.rules?.push({
+      test: /\.css$/,
+      use: [
+        {
+          loader: 'postcss-loader',
+          options: {
+            postcssOptions: {
+              plugins: [require('tailwindcss'), require('autoprefixer')],
+            },
+          },
+        },
+      ],
+      include: path.resolve(__dirname, '../'),
+    });
+
     return config;
   },
 };

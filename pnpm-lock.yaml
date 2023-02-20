@@ -16,6 +16,7 @@ specifiers:
   '@typescript-eslint/parser': ^5.0.0
   autoprefixer: ^10.4.13
   concurrently: ^7.6.0
+  css-loader: ^6.7.3
   eslint: 8.34.0
   eslint-config-airbnb: ^19.0.4
   eslint-config-airbnb-typescript: ^17.0.0
@@ -26,10 +27,12 @@ specifiers:
   lint-staged: ^13.1.2
   next: 13.1.6
   postcss: ^8.4.21
+  postcss-loader: ^7.0.2
   prettier: ^2.8.4
   react: 18.2.0
   react-dom: 18.2.0
   storybook: ^7.0.0-beta.50
+  style-loader: ^3.3.1
   tailwindcss: ^3.2.7
   tsconfig-paths-webpack-plugin: ^4.0.0
   typescript: 4.9.5
@@ -55,6 +58,7 @@ devDependencies:
   '@typescript-eslint/parser': 5.52.0_7kw3g6rralp5ps6mg3uyzz6azm
   autoprefixer: 10.4.13_postcss@8.4.21
   concurrently: 7.6.0
+  css-loader: 6.7.3_webpack@5.75.0
   eslint: 8.34.0
   eslint-config-airbnb: 19.0.4_hbw3smywoiafix46yjc35xsaqq
   eslint-config-airbnb-typescript: 17.0.0_35k7dt2qpwvbiggvzogcbhdb4i
@@ -64,8 +68,10 @@ devDependencies:
   husky: 8.0.3
   lint-staged: 13.1.2
   postcss: 8.4.21
+  postcss-loader: 7.0.2_6jdsrmfenkuhhw3gx4zvjlznce
   prettier: 2.8.4
   storybook: 7.0.0-beta.50
+  style-loader: 3.3.1_webpack@5.75.0
   tailwindcss: 3.2.7_postcss@8.4.21
   tsconfig-paths-webpack-plugin: 4.0.0
   typescript: 4.9.5

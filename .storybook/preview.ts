@@ -1,3 +1,6 @@
+import '!style-loader!css-loader!postcss-loader!tailwindcss/tailwind.css';
+import '../styles/globals.css';
+
 export const parameters = {
   backgrounds: {
     default: 'light',
